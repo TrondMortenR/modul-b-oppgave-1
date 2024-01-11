@@ -28,7 +28,14 @@ You can choose what the actual content is.
 Try to use both the let and const keywords
 ******************************************************************************/
 
-//your code here
+let myname = 'TrondM'
+let nameLast = 'Reknes'
+let age = 27
+let isStudent = true
+
+let fullname = myname + " " + nameLast
+
+const array = [fullname, age, isStudent]
 
 /****************************************************************************** 
 ASSIGNMENT 3
@@ -37,7 +44,12 @@ Try out a few of the operators we looked at (+, -, /, *)
 as well as a few of the shorthand operators (++, --, +=, -=)
 ******************************************************************************/
 
-//your code here
+let number = 2
+let numberTwo = 3
+let numberOne = 4
+
+let sum = number + numberTwo - numberOne
+console.log(sum)
 
 /****************************************************************************** 
 ASSIGNMENT 4
@@ -57,13 +69,20 @@ Try changing the values of the variables to make sure your IF/ELSE conditional
 can handle all cases correctly 
 ******************************************************************************/
 
-let userName = "";
-let userAge = 18;
+let userName = "Dera";
+let userAge = 27;
 let userIsLoggedIn = false;
 let userIsBlocked = false;
 let goToPage = "";
+let userMale = true;
 
-//your code here
+if (userName !=="" && userAge >= 18 && !userIsBlocked) {
+    userIsLoggedIn = true;
+    goToPage ='/home';
+    console.log('Howdy!');
+} else {
+    console.log ('Nah bruh');
+}
 
 /******************************************************************************
 ASSIGNMENT 5
@@ -78,6 +97,7 @@ Try changing userMale to both true and false and console.log your new variable,
 to see that your conditional is working.
 ******************************************************************************/
 
-const userMale = false;
+const userTitle = userMale ? "Mr." : "Mrs.";
+console.log(`User Title: ${userTitle}`);
 
-//your code here
+// i didn't quite understand what you ment so i gave the actual title above in task 4. this way i could make the function and actually test it.
