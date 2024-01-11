@@ -51,6 +51,14 @@ let numberOne = 4
 let sum = number + numberTwo - numberOne
 console.log(sum)
 
+let x = 10
+console.log(x)
+x = x + 5
+console.log(x)
+x += 3
+console.log(x)
+x++
+console.log(x)
 /****************************************************************************** 
 ASSIGNMENT 4
 
